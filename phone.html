@@ -6,38 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<style>
-    body{
-        border: none;
-        display: flex;
-        background-image: linear-gradient(45deg, #c1dfc4 0%, #deecdd 100%);
-    }
-    .phone{
-        position: absolute;
-        width: 30%;
-        height: 95%;
-        left: 15%;
-    }
-    .answer{
-        align-items: center;
-        position: absolute;
-        width: 200px;
-        height: 100px;
-        background:#FFE4E1;
-        border-radius: 20% 10%;
-        color: black;
-        text-align: center;
-        justify-content: center;
-    }
-    img{
-        position: absolute;
-        height: 100%;
-        width: 100%;
-    }
-</style>
+<style>@import url(./css/phone.css);</style>
 <body>
     <div class = "phone" >
-        <img src = "./img/phone.png">
+        <div class="dian"></div>
+        <div class="bydian"></div>
+        <div class="screen">
+            <div class="talk_show" id="words">
+				<div class="atalk"><span id="asay">您好,我们是XXX公司的</span></div>
+				<div class="btalk"><span id="bsay">你好~</span></div>
+			</div>
+            <div class="talk_input">
+                <div class="kuang">
+                    <input type="text" class="talk_word" id="talkwords">
+                    <input type="button" value="发送" class="talk_sub" id="talksub">
+                </div>
+            </div>
+        </div>
+        <div class="home">
+            <div class="fang"></div>
+        </div>
     </div>
     <div class="answer" style="top: 20%;left: 55%;">
         选项一
@@ -45,5 +33,7 @@
     <div class="answer" style="top: 20%;left: 80%;">
         选项二
     </div>
+    <script src="./js/phone.js"></script>
+    <script>beginning();</script>
 </body>
 </html>
