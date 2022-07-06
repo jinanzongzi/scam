@@ -48,31 +48,39 @@ body{
     margin: auto;
     /* width: 70%;
     height: 70%; */
-    left: 18%;
-    top:25%;
+    left: 270px;
+    top:200px;
 }
 #chat{
     position: absolute;
     /* width: 60%;
     height: 60%; */
-    top: 5%;
-    left: 65%;
+    margin: auto;
+    overflow: hidden;
+    right: 90px;
+    top: 50px;
 }
 #text{
     position: absolute;
     /* width: 50%;
     height: 50%; */
-    left: 68%;
-    top: 15%;
+    right: 90px;
+    top: 120px;
     text-align: center;
     font-size: 20px;
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    white-space:nowrap;
     /* z-index: 3; */
 }
 .title{
     position: absolute;
-    left: 22%;
+    left: 320px;
     color: #8470FF;
     font-size: 70px;
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    white-space:nowrap;
     text-shadow: 0.1em 0.1em 0.2em #6A5ACD	;
 }
 .img{
