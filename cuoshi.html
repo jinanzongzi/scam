@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>措施</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css" /><!--CSS RESET-->
+	<link rel="stylesheet" href="http://jrain.oscitas.netdna-cdn.com/tutorial/css/fontawesome-all.min.css">
+	<link rel="stylesheet" type="text/css" href="css/htmleaf-demo.css"><!--演示页面样式，使用时可以不引用-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css"/>
+	<style>
+		.post-slide{
+		    background: #fff;
+		    margin: 0 15px;
+		    padding:27px 30px;
+		    border-bottom: 1px solid #dedde1;
+		}
+		.post-slide .post-header{
+		    margin-bottom: 10px;
+		}
+		.post-slide .subtitle{
+		    color:#0b99bc;
+		    font-size:14px;
+		    display: inline-block;
+		    margin-bottom:5px;
+		    text-transform: uppercase;
+		    transition: all 0.4s ease 0s;
+		}
+		.post-slide .subtitle:hover{
+		    color:#333;
+		    text-decoration: none;
+		}
+		.post-slide .post-title{
+		    margin: 0;
+		}
+		.post-slide .post-title a{
+		    color:#333;
+		    font-size:18px;
+		    font-weight: bold;
+		    text-transform:capitalize;
+		    transition: all 0.4s ease 0s;
+		}
+		.post-slide .post-title a:hover{
+		    color:#0b99bc;
+		    text-decoration: none;
+		}
+		.post-slide .pic{
+		    overflow: hidden;
+		    position: relative;
+		}
+		.post-slide .pic img{
+		    width: 100%;
+		    height: auto;
+		    transform: rotate(0deg) scale(1,1);
+		    transition: all 0.9s ease 0s;
+		}
+		.post-slide:hover img{
+		    transform: rotate(-2deg) scale(1.1,1.1);
+		}
+		.post-slide .pic:after{
+		    content: "";
+		    position: absolute;
+		    top:0;
+		    left:0;
+		    width: 100%;
+		    height: 100%;
+		    background: rgba(255,255,255,0);
+		    transition: all 0.9s ease 0s;
+		 
+		}
+		.post-slide:hover .pic:after{
+		    background: rgba(255,255,255,0.2);
+		}
+		.post-slide .post-bar{
+		    list-style: none;
+		    padding:12px 0;
+		    margin: 0;
+		}
+		.post-slide .post-bar li{
+		    display: inline-block;
+		    margin-right:3px;
+		    color:#aaa;
+		}
+		.post-slide .post-bar li:last-child{
+		    margin-right: 0;
+		}
+		.post-slide .post-bar li a{
+		    color:#aaa;
+		    transition:0.3s ease;
+		}
+		.post-slide .post-bar li a:hover{
+		    text-decoration: none;
+		    color:#0b99bc;
+		}
+		.post-slide .post-description{
+		    font-size: 14px;
+		    line-height: 24px;
+		    margin-bottom:15px;
+		    color:#767676;
+		}
+		.post-slide .read-more{
+		    color:#0b99bc;
+		    font-size: 14px;
+		    font-style: italic;
+		    text-transform: capitalize;
+		}
+		.post-slide .read-more:hover{
+		    color:#333;
+		    text-decoration:none;
+		}
+		@media only screen and (max-width: 479px) {
+		    .post-slide{
+		        padding: 15px;
+		    }
+		    /* .post-slide .post-bar li{
+		        margin-bottom: 5px;
+		    }
+		    .post-slide .post-bar li:last-child{
+		        margin-bottom: 0;
+		    } */
+		}
+	</style>
+</head>
+<body>
+	<div class="htmleaf-container">
+		<header class="htmleaf-header">
+			<h1>相关预防措施 </h1>
+			<div class="htmleaf-links">
+				<a class="htmleaf-icon icon-htmleaf-home-outline" href="index.html" title="主界面" target="_blank"></a>
+			</div>
+		</header>
+		 <div class="demo" style="background: #f7f8fa;">
+	        <div class="container">
+	            <div class="row">
+	                <div class="col-md-12">
+	                    <div id="news-slider" class="owl-carousel">
+	                        <div class="post-slide">
+	                            <div class="post-header">
+	                                <!-- <a href="#" class="subtitle">保健品诈骗</a> -->
+                                    <h3 class="post-title"><a href="#">保健品诈骗</a></h3>
+	                            </div>
+	                            <div class="pic">
+	                                <img src="./img/health.jpg" alt=""/>
+	                            </div>
+	                            <p class="post-description">
+	                                老年人十分注重养生，诈骗分子借此诱惑老年人高价购买毫无用处的保健品，某些受疾病困扰的老年人会相信诈骗分子所说的各种“神奇”的“偏方疗法”。
+                                    诈骗分子打着免费送鸡蛋、水果、小家电的幌子，租用专门场地向老年人宣传“保健产品”，夸大产品功效，实施诈骗。防诈提示：面对保健品诈骗时，要相信科学，不要相信诈骗分子所说有包治百病的“灵丹妙药”。
+                                    身体不舒服时，要及时去正规医院就医诊治，相信医生。不要从非法渠道购买保健品，保健品不能治愈疾病，相反，伪劣的保健品可能会加重患者的病情，贻误治疗时机。	                            </p>
+	                            <a href="#" class="read-more">阅读更多</a>
+	                        </div>
+
+	                        <div class="post-slide">
+	                            <div class="post-header">
+	                                <!-- <a href="#" class="subtitle">Lorem ipsum</a> -->
+	                                <h3 class="post-title"><a href="#">中奖诈骗</a></h3>
+	                            </div>
+	                            <div class="pic">
+	                                <img src="./img/prize.jpg" alt=""/>
+	                            </div>
+	                            
+	                            <p class="post-description">
+	                                中奖诈骗主要通过信息群发，对受害者实施诈骗。
+                                    诈骗分子利用伪基站或者互联网软件群发虚假中奖信息，一旦有人联系兑奖，诈骗分子就以“公证费”“转账手续费”“滞纳金”等各种名目要求汇钱，实施诈骗。
+                                    防诈提示：天上不会掉馅饼，更没有免费的午餐，老年人平时一定要注意增强防骗意识，收到类似中奖信息时千万不要轻信，不要贪图意外之财，以免上当受骗。
+	                            </p>
+	                            <a href="#" class="read-more">阅读更多</a>
+	                        </div>
+
+	                        <div class="post-slide">
+	                            <div class="post-header">
+	                                <!-- <a href="#" class="subtitle">Lorem ipsum</a> -->
+	                                <h3 class="post-title"><a href="#">以房养老诈骗</a></h3>
+	                            </div>
+	                            <div class="pic">
+	                                <img src="./img/house.jpg" alt=""/>
+	                            </div>
+	                            <p class="post-description">
+	                                诈骗分子将目标瞄准老年人的房子，推出“以房养老”项目，忽悠老人抵押房产贷款，将贷到的钱用于购买“高收益”的“理财项目”。
+                                    前期老人还能获得收益，而后骗子卷钱跑路，房子也被强制过户，老年人钱房两空。
+                                    防诈提示：老年人要主动学习投资理财知识，去正规金融机构购买理财产品，警惕“高息0风险”理财项目，远离非法集资，并积极与子女沟通，重视他们的意见。
+	                            </p>
+	                            <a href="#" class="read-more">阅读更多</a>
+	                        </div>
+
+	                        <!-- <div class="post-slide">
+	                            <div class="post-header">
+	                                <a href="#" class="subtitle">Lorem ipsum</a>
+	                                <h3 class="post-title"><a href="#">Latest News Post</a></h3>
+	                            </div>
+	                            <div class="pic">
+	                                <img src="images/img-4.jpg" alt=""/>
+	                            </div>
+	                            <ul class="post-bar">
+	                                <li><i class="fa fa-users"></i> <a href="#">Admin</a></li>
+	                                <li><i class="fa fa-clock-o"></i> March 9,2016</li>
+	                                <li><i class="fa fa-comments"></i> <a href="#">6 Comment</a></li>
+	                            </ul>
+	                            <p class="post-description">
+	                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas gravida nulla eu massa efficitur, eu hendrerit ipsum efficitur. Morbi vitae velit ac.
+	                            </p>
+	                            <a href="#" class="read-more">read more</a>
+	                        </div> -->
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+		<!-- <div class="related">
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;防范诈骗
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                小心上钩&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+		</div> -->
+	</div>
+	
+	<script src="js/jquery-1.11.0.min.js" type="text/javascript"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+	<script>
+		$(function(){
+			$("#news-slider").owlCarousel({
+		        items : 3,
+		        itemsDesktop:[1199,3],
+		        itemsDesktopSmall:[1000,2],
+		        itemsMobile : [650,1],
+		        navigationText:false,
+		        autoPlay:true
+		    });
+		})
+	</script>
+</body>
+</html>
