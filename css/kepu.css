@@ -1,0 +1,245 @@
+body{
+    border: none;
+    display: flex;
+    background-image: linear-gradient(70deg, #FFE4E1 , #FFF0F5 );
+} 
+@font-face {
+    font-family:'diaoke';
+    src: url("../font/font1.ttf");
+}
+.myhead{
+    top: -30%;
+    left: 50%;
+    transform: translateX(-50%);
+    /* transform: translateY(50%); */
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    /* opacity: 0; */
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 15px 10px rgba(0, 0, 0, 0.35);
+    overflow: hidden;
+    transition: 0.5s;
+    color: gray;
+    font-family: diaoke;
+    font-size: 80px;
+}
+.myhead span{
+    width: 100%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 58%;
+    transition: 0.5s;
+}
+.IDcard:hover .myhead{
+    width: 130px;
+    height: 130px;
+    border-radius: 20px;
+}
+.IDcard:hover .myhead span{
+    left: 68.5%;
+}
+.IDcard:hover .details{
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    transition: 0.5s;
+    transform: translateY(20px);
+}
+
+.IDcard{
+    position: absolute;
+    /* top: 20%; */
+    transform: translate(-50%,-50%);
+    left: 5%;
+    height: 130px;
+    width: 250px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0.35px 8px 7px rgba(0, 0, 0, 0.15);
+    transition: 0.5s;
+    top: 46%;
+    left: 14%;
+}
+.IDcard:hover{
+    height: 300px;
+    width: 250px;
+}
+
+.message{
+    right: 10%;
+    width: 60%;
+    height: 70%;
+    position: absolute;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0.35px 8px 7px rgba(0, 0, 0, 0.15);
+    align-items: center;
+}
+.words{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; 
+    overflow: hidden;
+}
+.details{
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    transition: 0.5s;
+    transform: translateY(220px);
+}
+.details h2{
+    font-size: 1.25em;
+    font-weight: 600;
+    color: gray;
+    line-height: 1.2em;
+}
+.data{
+    /* display: flex; */
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.data{
+    font-size: 1em;
+    color: #555;
+    line-height: 1.7em;
+    font-size: 600;
+    opacity: 0.7;
+}
+.know{
+    position: absolute;
+    width: 777px;
+    height: 500px;
+    left: 34%;
+    transform: translateY(-50%);
+    top: 50%;
+}
+.mid{
+    position: absolute;
+    overflow: hidden;
+    height: 177px;
+    width: 177px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+.midd{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.img1{
+    position: absolute;
+    transform: translateX(-50%);
+}
+.img1 .card{
+    width: 100%;
+    height: 100%;
+    /* overflow: hidden; */
+    border-radius: 20px;
+}
+.front,.back{
+    border-radius: 20px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #fff repeat;
+    /* overflow: hidden; */
+    box-shadow: 7px 10px 7px rgba(0,0,0,0.15);
+    color: rgb(56, 54, 54);
+    font-family: diaoke;
+}
+.front span{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    font-size: 20px;
+    left: 50%;
+}
+.back{
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: rgb(98, 98, 98);
+    font-size: larger;
+    line-height: 170%;
+}
+
+.img1:hover .card{
+    transform: rotateY(180deg);
+}
+.card{
+    transition: transform 0.5s ease-in-out;
+    transform-style: preserve-3d;
+}
+.illness{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 60%;
+    border-radius: 20px;
+}
+.guideline{
+    position: absolute;
+    height: 45px;
+    width: 45px;
+    border-radius: 60px;
+    background: white;
+    left: 30px;
+    top: 92%;
+    transition: 0.5s;
+    overflow: hidden;
+    transform: translateY(-50%);
+}
+.guideline:hover{
+    height: 60px;
+    width: 315px;
+}
+.part{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    /* background: black; */
+    transform: translate(-50%,-50%);
+    top: 50%;
+    opacity: 0;
+    transition: 0.5s;
+}
+.part img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.jia{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    background: white;
+    transition: 0.5s;
+}
+.jia img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.guideline:hover .jia{
+    left: -50%;
+}
+.guideline:hover .part{
+    opacity: 1;
+}
