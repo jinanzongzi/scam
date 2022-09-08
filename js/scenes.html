@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>@import url(./css/scenes.css);</style>
+<body>
+    <div class="jindu" id="jindu">答题进度：0/5</div>
+    <div class="warnning" id="warnning">
+        您上当受骗啦！
+    </div>
+    <div class="graduate" id="graduate">
+        恭喜过关！
+    </div>
+    <img class="thief" id="thief" src="./img/thief.PNG">
+    <a class="omt" id="omt" href="./scenes.html">再试一次！</a>
+    <a class="return" id="return" href="./index.html">返回主界面</a>
+    <div class="mohu" id="mohu"></div>
+    <div class="introduce">
+        <div class="head" style="left: -44%;">
+            情景再现
+        </div>
+        <div class="details1" style="top: 18px; left: 120px;">
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp通过学习了上一个环节的防诈骗知识科普，相信您对各种诈骗类型以及解决措施也有了一定的了解，让我们来看看在接下来的各种情景下，您又是否能冷静应对，做出正确的选择呢。
+        </div>
+        <div class="details2" style="top: 236px;;left: 120px;">
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp游戏玩法：根据视频中的信息，分析并从A,B,C,D四个选项中选出在此情形下应该怎么应对。
+        </div>
+        <div class="details3" style="top: 395px;;left: 90px;">
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp温馨提示：本环节共有5题，题目和选项在每段视频播放结束之后出现，若想重新播放当前题目的视频，点击右侧重播按钮即可。
+        </div>
+    </div>
+    <div class="choices">
+        <div class="abcd" style="left: -3%;">
+            A:
+        </div>
+        <div class="answer" style="top: 5%;left: 5%;" id="A">
+            <span class="zi">好呀好呀，现在服务真是周到，方便了好多呢</span>
+        </div>
+        <div class="abcd" style="left: 33%;">
+            B:
+        </div>
+        <div class="answer" style="top: 5%;left: 40.5%;" id="B">
+            <span class="zi">不用了，我自己去交就行了</span>
+        </div>
+        <div class="abcd" style="top: 68%; left: 20%;">
+            C:
+        </div>
+        <div class="answer" style="bottom: -17%;left: 28%;" id="C">
+            <span class="zi">我知道你们这个保险公司的，把钱交给你们我放心</span>
+        </div>
+        <div class="abcd" style="top: 68%; left: 56%;">
+            D:
+        </div>
+        <div class="answer" style="bottom: -17%;left: 64%;" id="D">
+            <span class="zi">真的嘛，最近是不是有什么优惠阿</span>
+        </div>
+    </div>
+    <div class="replay" id="replay">
+        <img src="./img/replay.png">
+    </div>
+    <div class="trans" id="trans">
+        <span>选择正确!</span>
+    </div>
+    <video class="video" id="video" controls="controls" src="./img/video.mp4">
+    </video>
+    <div class="guideline">
+        <div class="guides" style="top: 47%;left: 53%;"><img src="./img/communiate.png"></div>
+        <a href="./index.html" class="guides" style="top: 13%;left: 48%;"><img src="./img/home.png"></a>
+        <a href="./kepu.html" class="guides" style="top: 19%;left: 69%;"><img src="./img/knowledge.png"></a>
+        <a href="./phone.html"class="guides" style="top: 35%;left: 84%;"><img src="./img/phone.png"></a>
+        <a href="./cuoshi.html" class="guides" style="top: 56%;left: 86%;"><img src="./img/cuoshi.png"></a>
+        <div class="jia"><img src="./img/plus.png"></div>
+    </div>
+    <script src="./js/scenes.js"></script>
+    <script>beginning();</script>
+</body>
+</html>
